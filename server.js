@@ -11,7 +11,7 @@ const token = process.env.GITHUB_TOKENS ? process.env.GITHUB_TOKENS.split(",") :
 app.get("/", (req, res) => {
   res.json({
     message: "Secure API",
-    count: tokens.length,
+    count: token.length,
     token
   });
 });
