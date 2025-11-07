@@ -12,7 +12,7 @@ app.get("/", (req, res) => {
   res.json({
     message: "Secure API",
     count: tokens.length,
-    tokens: tokens.map(() => "****PROTECTED****") 
+    tokens
   });
 });
 
