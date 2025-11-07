@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 5000;
 
 const tokens = process.env.GITHUB_TOKENS ? process.env.GITHUB_TOKENS.split(",") : [];
 
-app.get("/token", (req, res) => {
+app.get("/", (req, res) => {
   res.json({
     message: "Secure API",
     count: tokens.length,
